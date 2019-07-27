@@ -10,12 +10,29 @@
 </script>
 
 <style>
-  /* your styles go here */
+  article {
+    display: grid;
+    grid-template-columns: 3rem auto;
+    margin-bottom: 1rem;
+    grid-gap: 1rem;
+    padding: 0.5rem 1rem;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+  }
+  article .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: lighter;
+  }
+  article h2 {
+    margin: 0;
+  }
 </style>
 
-<article className="itemPreview">
-  <div className="left">{index}</div>
-  <div className="right">
+<article class="itemPreview">
+  <div class="left">{index}</div>
+  <div class="right">
     <h2>
       <a href={url}>{title}</a>
       {#if domain}
