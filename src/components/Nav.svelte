@@ -1,5 +1,5 @@
 <script>
-  import { Link } from "svelte-routing";
+  import NavLink from "./NavLink.svelte";
 </script>
 
 <style>
@@ -23,19 +23,19 @@
 <nav>
   <ul>
     <li>
-      <Link to="/">Top</Link>
+      <NavLink to="/">Top</NavLink>
     </li>
     <li>
-      <Link to="/newest">Newest</Link>
+      <NavLink to="/newest">Newest</NavLink>
     </li>
     <li>
-      <Link to="/show">Show</Link>
+      <NavLink to="/show">Show</NavLink>
     </li>
     <li>
-      <Link to="/ask">Ask</Link>
+      <NavLink to="/ask">Ask</NavLink>
     </li>
     <li>
-      <Link to="/jobs">Jobs</Link>
+      <NavLink to="/jobs">Jobs</NavLink>
     </li>
   </ul>
 </nav>

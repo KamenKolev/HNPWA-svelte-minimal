@@ -2,8 +2,6 @@
   import Nav from "./components/Nav.svelte";
   import Page from "./components/Page.svelte";
   import { Router, Link, Route } from "svelte-routing";
-
-  export let url = "/";
 </script>
 
 <style>
@@ -16,7 +14,7 @@
 <div class="App">
 
   <h1>Minimal Svelte HNPWA</h1>
-  <Router {url}>
+  <Router>
     <Nav />
     <Route component={Page} apiPath="news" lastPage="10" path="/*" />
     <Route component={Page} apiPath="newest" lastPage="12" path="/new/*" />
