@@ -3,11 +3,22 @@
   export let lastPage;
   import { onMount } from "svelte";
   import Item from "./Item.svelte";
+  import { Link, Router, navigate } from "svelte-routing";
 
-  console.log(apiPath);
-  apiPath = apiPath || "news";
+  let page;
   let posts = [];
-  let page = 1;
+
+  apiPath = apiPath || "news";
+
+  // if the url ends with a number
+  page = !isNaN(Number(window.location.pathname.slice(-1)))
+    ? Number(window.location.pathname.slice(-1))
+    : 1;
+
+  let linkPath =
+    apiPath === "news" ? `/${+page + 1}` : `${apiPath}/${+page + 1}`;
+
+  console.log(page);
 
   onMount(async () => {
     let res = await fetch(`https://api.hnpwa.com/v0/${apiPath}/${page}.json`);
@@ -31,3 +42,5 @@
     </li>
   {/each}
 </ol>
+
+<Link to={linkPath}>More</Link>

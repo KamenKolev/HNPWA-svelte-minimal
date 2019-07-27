@@ -17,7 +17,7 @@
   <Router>
     <Nav />
     <Route component={Page} apiPath="news" lastPage="10" path="/*" />
-    <Route component={Page} apiPath="newest" lastPage="12" path="/new/*" />
+    <Route component={Page} apiPath="newest" lastPage="12" path="/newest/*" />
     <Route component={Page} apiPath="ask" lastPage="2" path="/ask/*" />
     <Route component={Page} apiPath="show" lastPage="2" path="/show/*" />
     <Route component={Page} apiPath="jobs" lastPage="1" path="/jobs/*" />
@@ -25,7 +25,7 @@
 
   <footer>
     <small>
-      Build by
+      Built by
       <a href="https://github.com/KamenKolev/">Kamen Kolev</a>
     </small>
   </footer>
