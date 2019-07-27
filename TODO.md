@@ -1,4 +1,4 @@
-- [ ] add routing
+- [x] add routing
 - [ ] add pagination
 - [ ] make it a PWA
 - [ ] deploy
