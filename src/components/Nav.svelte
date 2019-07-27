@@ -1,5 +1,5 @@
 <script>
-  // export let name;
+  import { Link } from "svelte-routing";
 </script>
 
 <style>
@@ -23,19 +23,19 @@
 <nav>
   <ul>
     <li>
-      <a href="/">Top</a>
+      <Link to="/">Top</Link>
     </li>
     <li>
-      <a href="/newest">Newest</a>
+      <Link to="/newest">Newest</Link>
     </li>
     <li>
-      <a href="/show">Show</a>
+      <Link to="/show">Show</Link>
     </li>
     <li>
-      <a href="/ask">Ask</a>
+      <Link to="/ask">Ask</Link>
     </li>
     <li>
-      <a href="/jobs">Jobs</a>
+      <Link to="/jobs">Jobs</Link>
     </li>
   </ul>
 </nav>

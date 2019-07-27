@@ -1,8 +1,10 @@
 <script>
   export let apiPath;
+  export let lastPage;
   import { onMount } from "svelte";
   import Item from "./Item.svelte";
 
+  console.log(apiPath);
   apiPath = apiPath || "news";
   let posts = [];
   let page = 1;
