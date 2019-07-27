@@ -1,3 +1,5 @@
 - [ ] add routing
 - [ ] add pagination
-- [ ] ...
+- [ ] make it a PWA
+- [ ] deploy
+- [ ] add a proper README
